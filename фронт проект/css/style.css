@@ -1,0 +1,134 @@
+nav .logo {
+  margin: -10px;
+  margin-right: 40px;
+}
+
+nav #menu ul li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav #menu ul li a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+nav #menu ul li .drop_home_menu ul li {
+  display: block;
+}
+
+nav #menu ul li .drop_pages_menu ul li {
+  display: block;
+}
+
+nav #menu ul li .drop_portfolio_menu ul li {
+  display: block;
+}
+
+nav #menu ul li .drop_blog_menu ul li {
+  display: block;
+}
+
+nav #menu ul li .drop_elements_menu ul li {
+  display: block;
+}
+
+nav .search {
+  margin-right: 25px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+nav .shopping_bag i {
+  margin-right: 25px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+nav .shopping_bag a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+main #slider {
+  margin-top: 20px;
+}
+
+main #slider .slide {
+  position: relative !important;
+}
+
+main #slider .text {
+  position: absolute !important;
+  margin-top: -365px;
+}
+
+main #slider .text .title {
+  text-align: inherit;
+  line-height: 51px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 39px;
+}
+
+main #slider .text .about {
+  font-family: "Lora";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+main #slider .left {
+  position: relative;
+  vertical-align: middle;
+  width: 50px;
+  height: 1px;
+  background: #b5b0b0;
+}
+
+main #shelf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #shelf .menu ul {
+  margin-left: -31px;
+}
+
+main #shelf .menu ul li {
+  display: inline;
+  margin-right: 25px;
+}
+
+main #shelf .menu ul li a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+main #shelf .menu ul .filter {
+  margin-left: 445px;
+}
+
+main #shelf .menu ul .filter i {
+  cursor: pointer;
+}
+
+main #shelf .menu ul .filter .drop_filter_menu ul {
+  display: inline-block;
+}
+
+main #shelf .menu ul .filter .drop_filter_menu ul li {
+  display: block;
+}
+
+main #shelf .menu ul .filter .drop_filter_menu .title {
+  font-family: "Playfair Display",serif;
+  font-size: 22px;
+  line-height: 1.363em;
+}
+/*# sourceMappingURL=style.css.map */

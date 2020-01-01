@@ -1,0 +1,152 @@
+$text_color: black;
+$margin_right: 25px;
+$font_family:'Montserrat', sans-serif;;
+
+
+nav{ 
+    .logo{
+        margin: -10px;
+        margin-right: 40px;
+    }
+    #menu{
+     ul{ 
+     li {
+    display: inline;
+    margin-right: $margin_right;
+    a{
+        color: $text_color;
+        font-family: $font_family;
+        font-size: 15px;
+    }
+    .drop_home_menu{
+        ul{
+            li{
+                display: block;
+            }
+        }
+    }
+    .drop_pages_menu{
+        ul{
+            li{
+                display: block;
+            }
+        }
+    }
+    .drop_portfolio_menu{
+        ul{
+            li{
+                display: block;
+            }
+        }
+    }
+    .drop_blog_menu{
+        ul{
+            li{
+                display: block;
+            }
+        }
+    }
+    .drop_elements_menu{
+        ul{
+            li{
+                display: block;
+            }
+        }
+    }
+}
+}
+}
+.search{
+    margin-right: $margin_right;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+.shopping_bag{
+    i{
+    margin-right: $margin_right;
+    font-size: 17px;
+    cursor: pointer;
+    }
+    a{
+        color: $text_color;
+        font-family: $font_family;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+}
+}
+main{
+    // slider
+    #slider{
+        margin-top: 20px;
+            .slide{
+                position: relative !important;
+            }
+            .text{
+                position: absolute !important;
+                margin-top: -365px;
+                .title{               
+                text-align: inherit;
+                line-height: 51px;
+                font-family: 'Playfair Display', serif;;
+                font-weight: 400;
+                font-size: 39px;
+                }
+                .about{
+                    font-family: "Lora";
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 35px;
+                }
+            }
+        
+        .left{
+            position: relative;
+            vertical-align: middle;
+            width: 50px;
+            height: 1px;
+            background: #b5b0b0;  
+        }
+    }
+
+    //shelf
+    #shelf{
+        display: flex;
+        .menu{
+            ul{
+                margin-left: -31px;
+                li{
+                    display: inline;
+                    margin-right: $margin_right;
+                    a{
+                        color: $text_color;
+                        font-family: $font_family;
+                        font-size: 12px;
+                    }
+                }
+                .filter{
+                    margin-left: 445px;
+                    i{
+                        cursor: pointer;
+                    }
+                    .drop_filter_menu{
+                        ul{
+                            display: inline-block;
+                            li{
+                                display: block;
+                            }
+                        }
+                        .title{
+                            font-family: "Playfair Display",serif;
+                            font-size: 22px;
+                            line-height: 1.363em
+                        }
+                    }
+                }
+            }
+        }
+
+   }
+}
