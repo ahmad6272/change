@@ -114,6 +114,12 @@ main #shelf .menu ul .filter {
   margin-left: 445px;
 }
 
+main #shelf .menu ul .filter button {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
 main #shelf .menu ul .filter i {
   cursor: pointer;
 }
@@ -130,5 +136,116 @@ main #shelf .menu ul .filter .drop_filter_menu .title {
   font-family: "Playfair Display",serif;
   font-size: 22px;
   line-height: 1.363em;
+}
+
+main .cell .card {
+  margin-bottom: 110px;
+}
+
+main .cell .card .card-body h6 {
+  font-family: Montserrat;
+}
+
+main .cell .card .card-body .cash {
+  font-size: 12px;
+  font-family: 'Montserrat',sans-serif;
+}
+
+main .sector {
+  background-color: #f5ebeb;
+}
+
+main .sector #video {
+  display: block;
+}
+
+main .sector #video .video {
+  display: block;
+}
+
+main .sector #video .text .title h2 {
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+main .sector #video .text .title p {
+  display: block;
+  font-family: 'Lora', serif;
+  color: #6d6a6a;
+}
+
+main .sector #video .text .title .commets p {
+  display: block;
+  font-family: 'Lora', serif;
+  color: #6d6a6a;
+}
+
+main #experts {
+  margin-top: 6em;
+}
+
+main #experts .text h2 {
+  color: #2b2b2b;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+}
+
+main #experts .text p {
+  display: block;
+  font-size: 17px;
+  line-height: 29px;
+  font-family: "Lora",serif;
+  color: #6d6a6a;
+}
+
+main #experts .people h6 {
+  font-family: 'Montserrat';
+  font-size: 12px;
+}
+
+main #experts .people p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #afafaf;
+}
+
+main #info {
+  margin-top: 4em;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-image: url(../image/background/h3-background-img.jpg);
+  background-position: 50% 1px;
+}
+
+main #info h3 {
+  position: relative;
+  margin-top: 6em;
+  font-size: 30px;
+}
+
+main #info .search {
+  margin-top: 19px;
+}
+
+main #info .search input {
+  margin-top: 5px;
+  width: 100%;
+  height: 60px;
+}
+
+main #info .search button {
+  margin-top: 5px;
+  width: 170px;
+  height: 60px;
+  margin-left: -6px;
+  background-color: #f34f3f;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Montserrat',sans-serif;
+  line-height: 1.833em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
