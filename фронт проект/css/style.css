@@ -81,14 +81,6 @@ main #slider .text .about {
   line-height: 35px;
 }
 
-main #slider .left {
-  position: relative;
-  vertical-align: middle;
-  width: 50px;
-  height: 1px;
-  background: #b5b0b0;
-}
-
 main #shelf {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,25 +205,30 @@ main #experts .people p {
 main #info {
   margin-top: 4em;
   width: 100%;
-  height: auto;
-  position: absolute;
+  height: 400px;
+  position: relative;
+}
+
+main #info .backg {
   background-image: url(../image/background/h3-background-img.jpg);
-  background-position: 50% 1px;
 }
 
 main #info h3 {
-  position: relative;
-  margin-top: 6em;
+  padding-left: 38%;
+  padding-top: 50px;
+  position: absolute;
   font-size: 30px;
+  text-align: center;
 }
 
 main #info .search {
-  margin-top: 19px;
+  position: absolute;
+  padding-left: 38%;
+  padding-top: 80px;
 }
 
 main #info .search input {
   margin-top: 5px;
-  width: 100%;
   height: 60px;
 }
 
@@ -247,5 +244,233 @@ main #info .search button {
   line-height: 1.833em;
   letter-spacing: 0.1em;
   font-weight: 500;
+}
+
+main #blog {
+  background-color: #f8f8f8;
+  position: relative;
+  margin-top: 100px;
+}
+
+main #blog .about_blog h2 {
+  color: #2b2b2b;
+  font-weight: 400;
+  font-size: 38px;
+  font-family: "Playfair Display",serif;
+}
+
+main #blog .about_blog p {
+  font-size: 17px;
+  line-height: 29px;
+  font-family: 'Lora',serif;
+  color: #6d6a6a;
+}
+
+main #blog .news h5 {
+  color: #2b2b2b;
+  font-size: 22px;
+  line-height: 1.363em;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+}
+
+main #blog .news p {
+  line-height: 1.6em;
+  font-family: 'Lora',serif;
+  color: #6d6a6a;
+}
+
+main #blog .news .card-body {
+  background-color: #f8f8f8;
+}
+
+main #workers {
+  margin-top: 110px;
+}
+
+main #workers img {
+  margin-left: 223px;
+}
+
+main #workers p {
+  color: #4b4747;
+  font-family: 'Lora',serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+main #workers .about span {
+  color: #1b1b1b;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+footer {
+  position: relative;
+  background-color: #fefaf3;
+}
+
+footer h6 {
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+footer ul {
+  margin-top: 15px;
+}
+
+footer ul li a {
+  line-height: 28px;
+  font-size: 14px;
+  color: #8b8b8b !important;
+}
+
+footer .end .name {
+  margin-left: -18px;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 12px;
+}
+
+footer .end .name a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+footer .end .name :hover {
+  color: #f34f3f;
+}
+
+footer .end .sosial_media a {
+  text-decoration: none;
+}
+
+footer .end .sosial_media a span {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 10px;
+  letter-spacing: .2em;
+  margin-left: 25px;
+  color: #6d6a6a;
+}
+
+footer .end .sosial_media a :hover {
+  color: #f34f3f;
+}
+
+main .accordion {
+  height: 225px;
+  width: 100%;
+  background-color: #fafaf9;
+}
+
+main .accordion h1 {
+  margin: 75px;
+  margin-left: 127px;
+  font-size: 50px;
+  line-height: 1.32em;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+}
+
+main #first_accardion {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+main #first_accardion .title {
+  cursor: pointer;
+}
+
+main #first_accardion .title :hover {
+  color: white;
+  background-color: #f34f3f;
+}
+
+main #first_accardion .card-header {
+  background-color: white;
+}
+
+main #first_accardion .card-header h6 {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+main #first_accardion p {
+  font-family: "Lora",serif;
+}
+
+main #first_accardion .color {
+  color: white;
+  background-color: #f34f3f;
+}
+
+main #first_accardion .info {
+  display: none;
+}
+
+main #second_accardion {
+  margin-bottom: 155px;
+}
+
+main #second_accardion .title {
+  cursor: pointer;
+}
+
+main #second_accardion .title :hover {
+  color: #f34f3f;
+}
+
+main #second_accardion .card-header {
+  background-color: white;
+}
+
+main #second_accardion .card-header h6 {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+main #second_accardion .color {
+  color: #f34f3f;
+}
+
+main #second_accardion .info {
+  display: none;
+}
+
+main #tab_menu1 .menu a {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 15px 45px;
+}
+
+main #tab_menu1 .menu p {
+  margin: 0;
+  font-family: 'Lora',serif;
+  line-height: 1.6em;
+}
+
+main #tab_menu1 .tab {
+  padding: 75px 47px;
+  border: 1px solid #eee;
+  margin-top: -1px;
+}
+
+main #tab_menu2 .menu {
+  margin-left: 10%;
 }
 /*# sourceMappingURL=style.css.map */
