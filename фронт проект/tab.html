@@ -16,7 +16,7 @@
 <body>
     <header>
         <!-- begin navbar -->
-        <div class="container mt-5">
+        <div class="container mt-5 mb-4">
             <nav>
                 <div class="row col-12">
                     <!-- logo -->
@@ -28,8 +28,8 @@
                     <!-- menu -->
                     <div id="menu">
                         <ul class="menu">
-                            <li class="home"><a href="#">HOME</a>
-                                <div class="home_menu d-none">
+                            <li class="nav-elm-item home"><a href="#">HOME</a>
+                                <div class="home_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_home_menu">
                                         <ul>
                                             <li><a href="#">Main Home</a></li>
@@ -43,8 +43,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="page"><a href="#">PAGES</a>
-                                <div class="page_menu d-none">
+                            <li class="nav-elm-item page"><a href="#">PAGES</a>
+                                <div class="page_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_pages_menu">
                                         <ul>
                                             <li><a href="#">About Us</a></li>
@@ -54,9 +54,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="shop"><a href="#">SHOP</a></li>
-                            <li class="portfolio"><a href="#">PORTFOLIO</a>
-                                <div class="portfolio_menu d-none">
+                            <li class="nav-elm-item shop"><a href="#">SHOP</a></li>
+                            <li class="nav-elm-item portfolio"><a href="#">PORTFOLIO</a>
+                                <div class="portfolio_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_portfolio_menu">
                                         <ul>
                                             <li><a href="#">Standard</a></li>
@@ -68,8 +68,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="blog"><a href="#">BLOG</a>
-                                <div class="blog_menu d-none">
+                            <li class="nav-elm-item blog"><a href="#">BLOG</a>
+                                <div class="blog_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_blog_menu">
                                         <ul>
                                             <li><a href="#">Masonry</a></li>
@@ -79,8 +79,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="elm"><a href="#">ELEMENTS</a>
-                                <div class="elements_menu d-none">
+                            <li class="nav-elm-item elm"><a href="#">ELEMENTS</a>
+                                <div class="elements_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_elements_menu">
                                         <ul>
                                             <li><a href="#">Classic</a></li>
@@ -124,14 +124,13 @@
             <div class="row d-flex justify-content-start">
                 <div id="tab_menu1" class="col-5 offset-1">
                     <div class="menu">
-                       <div id="tab_item" class="d-flex">
-                           <a href="#nav-services1" class="tab-item border">SERVICES</a>
-                           <a href="#nav-shop1" class="tab-item border">SHOP</a>
-                           <a href="#nav-product1" class="tab-item border">PRODUCT</a>
-                       </div>
-                        <div class="tab-content tab" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-services1" role="tabpanel"
-                                aria-labelledby="nav-services1-tab">
+                        <div id="tab_item" class="d-flex">
+                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item border">SERVICES</a>
+                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item border" >SHOP</a>
+                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item border" >PRODUCT</a>
+                        </div>
+                        <div class="tab-content tab">
+                            <div id="1a" class="tab-pane fade show active" > 
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                                     dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -140,7 +139,7 @@
                                     Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
                                 </p>
                             </div>
-                            <div class="tab-pane fade" id="nav-shop1" role="tabpanel" aria-labelledby="nav-shop1-tab">
+                            <div id="2a" class="tab-pane fade show" > 
                                 <p>
                                     Aliquam lorem ante, dapibus in, viverra quis, feugiat
                                     a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
@@ -151,8 +150,7 @@
                                     vulputate eget, arcu. In enim justo, rhoncus ut.
                                 </p>
                             </div>
-                            <div class="tab-pane fade" id="nav-product1" role="tabpanel"
-                                aria-labelledby="nav-product1-tab">
+                            <div id="3a" class="tab-pane fade show" > 
                                 <p>
                                     Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
                                     nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
@@ -165,19 +163,15 @@
                         </div>
                     </div>
                 </div>
-                <div id="tab_menu2" class="col-5">
+                <div id="tab_menu2" class="col-5 offset-1">
                     <div class="menu">
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist"><a href=""></a>
-                            <a class="nav-item nav-link active" id="nav-services2-tab" data-toggle="tab"
-                                href="#nav-services2" aria-selected="true">SERVICES</a>
-                            <a class="nav-item nav-link" id="nav-shop2-tab" data-toggle="tab" href="#nav-shop2"
-                                aria-selected="false">SHOP</a>
-                            <a class="nav-item nav-link" id="nav-product2-tab" data-toggle="tab" href="#nav-product2"
-                                aria-selected="false">PRODUCT</a>
+                        <div id="tab_item" class="d-flex">
+                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item border">SERVICES</a>
+                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item border" >SHOP</a>
+                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item border" >PRODUCT</a>
                         </div>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active text-left" id="nav-services2" role="tabpanel"
-                                aria-labelledby="nav-services2-tab">
+                        <div class="tab-content tab">
+                            <div id="1a" class="tab-pane fade show active" > 
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                                     dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -186,8 +180,7 @@
                                     Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
                                 </p>
                             </div>
-                            <div class="tab-pane fade text-left" id="nav-shop2" role="tabpanel"
-                                aria-labelledby="nav-shop2-tab">
+                            <div id="2a" class="tab-pane fade show" > 
                                 <p>
                                     Aliquam lorem ante, dapibus in, viverra quis, feugiat
                                     a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
@@ -198,8 +191,7 @@
                                     vulputate eget, arcu. In enim justo, rhoncus ut.
                                 </p>
                             </div>
-                            <div class="tab-pane fade text-left" id="nav-product2" role="tabpanel"
-                                aria-labelledby="nav-product2-tab">
+                            <div id="3a" class="tab-pane fade show" > 
                                 <p>
                                     Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
                                     nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,

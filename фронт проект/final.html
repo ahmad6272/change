@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Home_Page</title>
 </head>
@@ -16,7 +19,7 @@
 <body>
     <header>
         <!-- begin navbar -->
-        <div class="container mt-5">
+        <div class="container mt-5 mb-4">
             <nav>
                 <div class="row col-12">
                     <!-- logo -->
@@ -28,8 +31,8 @@
                     <!-- menu -->
                     <div id="menu">
                         <ul class="menu">
-                            <li class="home"><a href="#">HOME</a>
-                                <div class="home_menu d-none">
+                            <li class="nav-elm-item home"><a href="#">HOME</a>
+                                <div class="home_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_home_menu">
                                         <ul>
                                             <li><a href="#">Main Home</a></li>
@@ -43,8 +46,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="page"><a href="#">PAGES</a>
-                                <div class="page_menu d-none">
+                            <li class="nav-elm-item page"><a href="#">PAGES</a>
+                                <div class="page_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_pages_menu">
                                         <ul>
                                             <li><a href="#">About Us</a></li>
@@ -54,9 +57,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="shop"><a href="#">SHOP</a></li>
-                            <li class="portfolio"><a href="#">PORTFOLIO</a>
-                                <div class="portfolio_menu d-none">
+                            <li class="nav-elm-item shop"><a href="#">SHOP</a></li>
+                            <li class="nav-elm-item portfolio"><a href="#">PORTFOLIO</a>
+                                <div class="portfolio_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_portfolio_menu">
                                         <ul>
                                             <li><a href="#">Standard</a></li>
@@ -68,8 +71,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="blog"><a href="#">BLOG</a>
-                                <div class="blog_menu d-none">
+                            <li class="nav-elm-item blog"><a href="#">BLOG</a>
+                                <div class="blog_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_blog_menu">
                                         <ul>
                                             <li><a href="#">Masonry</a></li>
@@ -79,8 +82,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="elm"><a href="#">ELEMENTS</a>
-                                <div class="elements_menu d-none">
+                            <li class="nav-elm-item elm"><a href="#">ELEMENTS</a>
+                                <div class="elements_menu ahmad-sub-menu elm-collapsed">
                                     <div class="drop_elements_menu">
                                         <ul>
                                             <li><a href="#">Classic</a></li>
@@ -266,7 +269,12 @@
         <div class="sector mt-5 w-100 ">
             <div id="video">
                 <div class="video mt-3 ml-5">
-                    <!-- <img style="width: 550px; height: 356px;" src="image/video/h3-video-img-225x146.jpg" alt=""> -->
+                    <article class="video">
+                        <a href="https://www.youtube.com/watch?v=wfsGDOUpYig" class="glightbox2">
+                            <img src="https://img.youtube.com/vi/wfsGDOUpYig/0.jpg" alt="">
+                        </a>
+                        <p class="title">Paganini Variations A minor</p>
+                    </article>
                 </div>
                 <div class="text offset-7">
                     <div class="title mt-5">
@@ -500,6 +508,11 @@
     <script src="https://kit.fontawesome.com/08760d24a4.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        let lightboxVideo = GLightbox({
+            selector: 'glightbox2',
+        });
+    </script>
 </body>
 
 </html>
