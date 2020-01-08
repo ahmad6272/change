@@ -20,16 +20,16 @@
             <nav>
                 <div class="row col-12">
                     <!-- logo -->
-                    <div class="logo col-3">
+                    <div class="logo col-3 px-0 mx-0">
                         <a href="">
                             <img class="w-100" src="image/logo/logo.png">
                         </a>
                     </div>
                     <!-- menu -->
-                    <div id="menu">
+                    <div id="menu" class="col-9 px-0 mx-0">
                         <ul class="menu">
                             <li class="nav-elm-item home"><a href="#">HOME</a>
-                                <div class="home_menu ahmad-sub-menu elm-collapsed">
+                                <div class="home_menu elm-collapsed">
                                     <div class="drop_home_menu">
                                         <ul>
                                             <li><a href="#">Main Home</a></li>
@@ -56,7 +56,7 @@
                             </li>
                             <li class="nav-elm-item shop"><a href="#">SHOP</a></li>
                             <li class="nav-elm-item portfolio"><a href="#">PORTFOLIO</a>
-                                <div class="portfolio_menu ahmad-sub-menu elm-collapsed">
+                                <div class="portfolio_menu elm-collapsed">
                                     <div class="drop_portfolio_menu">
                                         <ul>
                                             <li><a href="#">Standard</a></li>
@@ -69,7 +69,7 @@
                                 </div>
                             </li>
                             <li class="nav-elm-item blog"><a href="#">BLOG</a>
-                                <div class="blog_menu ahmad-sub-menu elm-collapsed">
+                                <div class="blog_menu elm-collapsed">
                                     <div class="drop_blog_menu">
                                         <ul>
                                             <li><a href="#">Masonry</a></li>
@@ -80,7 +80,7 @@
                                 </div>
                             </li>
                             <li class="nav-elm-item elm"><a href="#">ELEMENTS</a>
-                                <div class="elements_menu ahmad-sub-menu elm-collapsed">
+                                <div class="elements_menu elm-collapsed">
                                     <div class="drop_elements_menu">
                                         <ul>
                                             <li><a href="#">Classic</a></li>
@@ -91,15 +91,13 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="nav-elm-item search"> <i class="fas fa-search"></i> </li>
+                            <li class="nav-elm-item shopping_bag">
+                                <i class="fas fa-shopping-bag"></i>
+                                <a href="">CART($0)</a>
+                            </li>
                         </ul>
-                    </div>
-                    <!-- shopping -->
-                    <div class="search">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="shopping_bag">
-                        <i class="fas fa-shopping-bag"></i>
-                        <a href="">CART($0)</a>
+
                     </div>
                 </div>
             </nav>
@@ -125,12 +123,12 @@
                 <div id="tab_menu1" class="col-5 offset-1">
                     <div class="menu">
                         <div id="tab_item" class="d-flex">
-                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item border">SERVICES</a>
-                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item border" >SHOP</a>
-                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item border" >PRODUCT</a>
+                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item show border">SERVICES</a>
+                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item border">SHOP</a>
+                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item border">PRODUCT</a>
                         </div>
                         <div class="tab-content tab">
-                            <div id="1a" class="tab-pane fade show active" > 
+                            <div id="1a" class="tab-pane fade show active">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                                     dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -139,7 +137,7 @@
                                     Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
                                 </p>
                             </div>
-                            <div id="2a" class="tab-pane fade show" > 
+                            <div id="2a" class="tab-pane fade show">
                                 <p>
                                     Aliquam lorem ante, dapibus in, viverra quis, feugiat
                                     a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
@@ -150,7 +148,7 @@
                                     vulputate eget, arcu. In enim justo, rhoncus ut.
                                 </p>
                             </div>
-                            <div id="3a" class="tab-pane fade show" > 
+                            <div id="3a" class="tab-pane fade show">
                                 <p>
                                     Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
                                     nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
@@ -163,15 +161,15 @@
                         </div>
                     </div>
                 </div>
-                <div id="tab_menu2" class="col-5 offset-1">
+                <div id="tab_menu2" class="col-5 offset-1 ml-2">
                     <div class="menu">
-                        <div id="tab_item" class="d-flex">
-                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item border">SERVICES</a>
-                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item border" >SHOP</a>
-                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item border" >PRODUCT</a>
+                        <div id="tab_item2" class="d-flex">
+                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item show border">SERVICES</a>
+                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item border">SHOP</a>
+                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item border">PRODUCT</a>
                         </div>
-                        <div class="tab-content tab">
-                            <div id="1a" class="tab-pane fade show active" > 
+                        <div class="tab-content tab2">
+                            <div id="1a" class="tab-pane fade show active">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                                     dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -180,7 +178,7 @@
                                     Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
                                 </p>
                             </div>
-                            <div id="2a" class="tab-pane fade show" > 
+                            <div id="2a" class="tab-pane fade show">
                                 <p>
                                     Aliquam lorem ante, dapibus in, viverra quis, feugiat
                                     a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
@@ -191,7 +189,93 @@
                                     vulputate eget, arcu. In enim justo, rhoncus ut.
                                 </p>
                             </div>
-                            <div id="3a" class="tab-pane fade show" > 
+                            <div id="3a" class="tab-pane fade show">
+                                <p>
+                                    Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+                                    nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                                    sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+                                    blandit vel, luctus pulvinar. Aenean vulputate eleifend tellus. Aenean leo ligula,
+                                    porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+                                    viverra quis, feugiat a.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-10 offset-1 mt-5 mb-5">
+                <div id="tab_menu3" class="w-100 ml-2">
+                    <div class="menu">
+                        <div id="tab_item3" class="d-flex">
+                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item show">SERVICES</a>
+                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item">SHOP</a>
+                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item">PRODUCT</a>
+                        </div>
+                        <div class="tab-content tab3">
+                            <div id="1a" class="tab-pane fade show active text-left">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                    quis, sem. Nulla consequat massa. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                                    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                                </p>
+                            </div>
+                            <div id="2a" class="tab-pane fade show text-left">
+                                <p>
+                                    Aliquam lorem ante, dapibus in, viverra quis, feugiat
+                                    a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam
+                                    eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus. Curabitur
+                                    ullamcorper ultricies nisi. Nam eget dui. Donec pede justo, fringilla vel, aliquet
+                                    nec,
+                                    vulputate eget, arcu. In enim justo, rhoncus ut.
+                                </p>
+                            </div>
+                            <div id="3a" class="tab-pane fade show text-left">
+                                <p>
+                                    Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+                                    nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                                    sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+                                    blandit vel, luctus pulvinar. Aenean vulputate eleifend tellus. Aenean leo ligula,
+                                    porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+                                    viverra quis, feugiat a.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-10 offset-1 mt-5 mb-5">
+                <div id="tab_menu4" class="w-100 offset-1 ml-2 mb-5">
+                    <div class="menu d-flex">
+                        <div id="tab_item4" class="d-flex flex-column d-inline-flex">
+                            <a href="#1a" id="a1" data-toggle="tab" class="tab-item show border border-bottom-0">SERVICES</a>
+                            <a href="#2a" id="a2" data-toggle="tab" class="tab-item border border-bottom-0">SHOP</a>
+                            <a href="#3a" id="a3" data-toggle="tab" class="tab-item border">PRODUCT</a>
+                        </div>
+                         <div class="tab-content tab4">
+                            <div id="1a" class="tab-pane fade show active">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                    quis, sem. Nulla consequat massa. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                                    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                                </p>
+                            </div>
+                            <div id="2a" class="tab-pane fade show">
+                                <p>
+                                    Aliquam lorem ante, dapibus in, viverra quis, feugiat
+                                    a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam
+                                    eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus. Curabitur
+                                    ullamcorper ultricies nisi. Nam eget dui. Donec pede justo, fringilla vel, aliquet
+                                    nec,
+                                    vulputate eget, arcu. In enim justo, rhoncus ut.
+                                </p>
+                            </div>
+                            <div id="3a" class="tab-pane fade show">
                                 <p>
                                     Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
                                     nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,

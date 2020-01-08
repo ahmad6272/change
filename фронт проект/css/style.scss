@@ -1,5 +1,5 @@
 $text_color: black;
-$margin_right: 25px;
+$margin_right: 20px;
 $backgraund_color: #fafaf9;
 $font_family: 'Montserrat', sans-serif;
 $font_family_h: 'Montserrat';
@@ -18,13 +18,34 @@ nav {
         margin-right: $margin_right;
 
         a {
-          padding: 8px 26px;
-          font-size: 13px;
+          padding: 8px 11px;
+          font-size: 15px;
           color: #737373;
           line-height: 19px;
         }
 
       }
+    }
+    .search {
+      i{
+      font-size: 17px;
+      cursor: pointer;
+    }
+    }
+  
+    .shopping_bag {
+      i {
+        font-size: 17px;
+        cursor: pointer;
+      }
+  
+      a {
+        color: $text_color;
+        font-family: $font_family;
+        font-size: 15px;
+        cursor: pointer;
+      }
+  
     }
 
     .nav-elm-item {
@@ -60,28 +81,7 @@ nav {
     }
   }
 
-  .search {
-    margin-right: $margin_right;
-    font-size: 17px;
-    cursor: pointer;
-
-  }
-
-  .shopping_bag {
-    i {
-      margin-right: $margin_right;
-      font-size: 17px;
-      cursor: pointer;
-    }
-
-    a {
-      color: $text_color;
-      font-family: $font_family;
-      font-size: 15px;
-      cursor: pointer;
-    }
-
-  }
+  
   
 }
 
@@ -439,7 +439,6 @@ footer {
   }
 }
 
-
 // accordion page
 main {
   .accordion {
@@ -463,7 +462,10 @@ main {
 
     .title {
       cursor: pointer;
-
+      .color{
+        color: white;
+        background-color: #f34f3f;
+      }
       :hover {
         color: white;
         background-color: #f34f3f;
@@ -486,11 +488,6 @@ main {
       font-family: "Lora", serif;
     }
 
-    .color {
-      color: white;
-      background-color: #f34f3f;
-    }
-
     .info {
       display: none;
     }
@@ -502,6 +499,9 @@ main {
     .title {
       cursor: pointer;
 
+      .color{
+        color: #f34f3f
+      }
       :hover {
         color: #f34f3f;
       }
@@ -519,10 +519,6 @@ main {
       }
     }
 
-    .color {
-      color: #f34f3f;
-    }
-
     .info {
       display: none;
     }
@@ -530,17 +526,26 @@ main {
 
 }
 
-
 // tab page
 main {
   #tab_menu1 {
     .menu {
-      a {
-        text-decoration: none;
-        border-bottom: none;
-        padding: 15px 45px;
+      #tab_item{
+        a {
+          color: #1b1b1b;
+          text-decoration: none;
+          border-bottom: none;
+          padding: 15px 45px;
+        }
+        .show{
+          color: white;
+          background-color: #f34f3f;
+        }
+        :hover {
+          color: white;
+          background-color: #f34f3f;
+        }
       }
-
       p {
         margin: 0;
         font-family: 'Lora', serif;
@@ -554,4 +559,352 @@ main {
       margin-top: -1px;
     }
   }
+  #tab_menu2{
+    .menu {
+     #tab_item2{
+      a {
+        color: #1b1b1b;
+        background-color: #f6f6f6;
+        text-decoration: none;
+        border-bottom: none;
+        padding: 15px 45px;
+      }
+      .show{
+        color: white;
+        background-color: #f34f3f;
+      }
+      :hover {
+        color: white;
+        background-color: #f34f3f;
+      }
+     }
+
+      p {
+        margin: 0;
+        font-family: 'Lora', serif;
+        line-height: 1.6em;
+      }
+    }
+
+    .tab2 {
+      padding: 75px 47px;
+      border: 1px solid #eee;
+      margin-top: -1px;
+    }
+  }
+  #tab_menu3{
+    .menu {
+     #tab_item3{
+      a { 
+        color: #1b1b1b;
+        text-decoration: none;       
+        padding: 15px 45px;
+        font-family: "Montserrat";
+        font-size: 12px;
+        line-height: 2em;
+      }
+      .show{
+        color: #f34f3f;
+      }
+      :hover {
+        color: #f34f3f;
+      }
+     }
+
+      p {
+        margin: 0;
+        font-family: 'Lora', serif;
+        line-height: 1.6em;
+      }
+    }
+
+    .tab3 {
+      padding: 75px 47px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      margin-top: -1px;
+    }
+  }
+  #tab_menu4{
+    .menu {
+      #tab_item4{
+        a {
+          color: #1b1b1b;
+          text-decoration: none;
+          border-bottom: none ;
+          border-right: none !important;
+          padding: 15px 45px;
+        }
+        .show{
+          color: white;
+          background-color: #f34f3f;
+        }
+        :hover {
+          color: white;
+          background-color: #f34f3f;
+        }
+      }
+      p {
+        margin: 0;
+        font-family: 'Lora', serif;
+        line-height: 1.6em;
+      }
+    }
+
+    .tab4 {
+      margin-top: .1px !important;
+      padding: 75px 47px;
+      border: 1px solid #eee;
+      margin-top: -1px;
+    }
+  }
+  
+}
+
+// shop list
+main{
+  .shop_list {
+    height: 225px;
+    width: 100%;
+    background-color: $backgraund_color;
+
+    h1 {
+      margin: 75px;
+      margin-left: 127px;
+      font-size: 50px;
+      line-height: 1.32em;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+    }
+  }
+  #image{
+    .show{
+      display: none;
+      :hover{
+        display: block;
+      }
+    }
+    .first_image{
+      a{
+        position: relative;
+      }
+      .new{
+        position: absolute;
+        display: block;
+        top: 0;
+        width: auto;
+        height: 30px;
+        background: #f34f3f;
+        color: #fff;
+        font-family: "Playfair Display",serif;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 56px 0 0 9px;
+        padding: 5px 13px;
+        z-index: 100;
+      }
+      .price{
+        cursor: pointer;
+        position: relative;
+        height: 316px;
+        margin-top: -316px;
+        padding: 10px 15px;
+        text-align: center;
+        background-color: rgba(255,255,255,.9);
+        transition: opacity .3s ease;
+        .name{
+          margin-top: 50%;
+          text-align: center;
+          a{
+            color: #1b1b1b;
+            font-family: 'Montserrat';
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 2em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
+        }
+        .cash{
+          color: #afafaf;
+          cursor: pointer;
+        }
+        .add_to_card{
+         a{
+          text-decoration: none;
+          color: #fff;
+          background-color: #f34f3f;
+          position: relative;
+          font-size: 16px;
+          font-family: 'Montserrat',sans-serif;
+          line-height: 2.6em;
+          letter-spacing: .1em;
+          font-weight: 500;
+          padding: 6px 50px;
+          z-index: 3;
+         }
+        }
+      }
+    }
+    .second_image{
+      .price{
+        cursor: pointer;
+        position: relative;
+        height: 316px;
+        margin-top: -316px;
+        padding: 10px 15px;
+        text-align: center;
+        background-color: rgba(255,255,255,.9);
+        transition: opacity .3s ease;
+        .name{
+          margin-top: 50%;
+          text-align: center;
+          a{
+            color: #1b1b1b;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            line-height: 2em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
+        }
+        .cash{
+          color: #afafaf;
+          cursor: pointer;
+        }
+        .add_to_card{
+         a{
+          text-decoration: none;
+          color: #fff;
+          background-color: #f34f3f;
+          position: relative;
+          font-size: 16px;
+          font-family: 'Montserrat',sans-serif;
+          line-height: 2.6em;
+          letter-spacing: .1em;
+          font-weight: 500;
+          padding: 6px 50px;
+          z-index: 3;
+         }
+        }
+      }
+    }
+    .third_image{
+      a{
+        position: relative;
+      }
+      .sold{
+        position: absolute;
+        display: block;
+        top: 0;
+        width: auto;
+        height: 30px;
+        background: #2b2b2b;
+        color: #fff;
+        font-family: "Playfair Display",serif;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 56px 0 0 9px;
+        padding: 5px 13px;
+        z-index: 100;
+      }
+      .price{
+        cursor: pointer;
+        position: relative;
+        height: 316px;
+        margin-top: -316px;
+        padding: 10px 15px;
+        text-align: center;
+        background-color: rgba(255,255,255,.9);
+        transition: opacity .3s ease;
+        .name{
+          margin-top: 50%;
+          text-align: center;
+          a{
+            color: #1b1b1b;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            line-height: 2em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
+        }
+        .cash{
+          color: #afafaf;
+          cursor: pointer;
+        }
+        .add_to_card{
+         a{
+          text-decoration: none;
+          color: #fff;
+          background-color: #f34f3f;
+          position: relative;
+          font-size: 16px;
+          font-family: 'Montserrat',sans-serif;
+          line-height: 2.6em;
+          letter-spacing: .1em;
+          font-weight: 500;
+          padding: 6px 50px;
+          z-index: 3;
+         }
+        }
+      }
+    }
+    .fourth_image{
+      .price{
+        cursor: pointer;
+        position: relative;
+        height: 316px;
+        margin-top: -316px;
+        padding: 10px 15px;
+        text-align: center;
+        background-color: rgba(255,255,255,.9);
+        transition: opacity .3s ease;
+        .name{
+          margin-top: 45%;
+          text-align: center;
+          a{
+            color: #1b1b1b;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            line-height: 2em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
+        }
+        .cash{
+          color: #afafaf;
+          cursor: pointer;
+        }
+        .add_to_card{
+         a{
+          text-decoration: none;
+          color: #fff;
+          background-color: #f34f3f;
+          position: relative;
+          font-size: 16px;
+          font-family: 'Montserrat',sans-serif;
+          line-height: 2.6em;
+          letter-spacing: .1em;
+          font-weight: 500;
+          padding: 6px 35px;
+          z-index: 3;
+         }
+        }
+      }
+    }
+  }
+
+
 }
