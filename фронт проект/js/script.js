@@ -107,5 +107,68 @@ $(document).ready(function () {
     })  
     $(".fourth_image").mouseout(function () {
         $(".fourth").addClass("show")
-    })  
+    })
+    
+
+    // shop_list_slider
+    $(".first_picture ").mouseover(function () {
+        $(".about .first a").removeClass("slide")
+        $(".about .first span").addClass("slide")
+    })
+
+    $(".first_picture").mouseout(function () {
+        $(".about .first a").addClass("slide")
+        $(".about .first span").removeClass("slide")
+    })
+
+    $(".second_picture ").mouseover(function () {
+        $(".about .second a").removeClass("slide")
+        $(".about .second span").addClass("slide")
+    })
+
+    $(".second_picture").mouseout(function () {
+        $(".about .second a").addClass("slide")
+        $(".about .second span").removeClass("slide")
+    })
+
+    $(".third_picture ").mouseover(function () {
+        $(".about .third a").removeClass("slide")
+        $(".about .third span").addClass("slide")
+    })
+
+    $(".third_picture").mouseout(function () {
+        $(".about .third a").addClass("slide")
+        $(".about .third span").removeClass("slide")
+    })
+
+    $(".fourth_picture ").mouseover(function () {
+        $(".about .fourth a").removeClass("slide")
+        $(".about .fourth span").addClass("slide")
+    })
+
+    $(".fourth_picture").mouseout(function () {
+        $(".about .fourth a").addClass("slide")
+        $(".about .fourth span").removeClass("slide")
+    })
+
+    $(".fifth_picture ").mouseover(function () {
+        $(".about .fifth a").removeClass("slide")
+        $(".about .fifth span").addClass("slide")
+    })
+
+    $(".fifth_picture").mouseout(function () {
+        $(".about .fifth a").addClass("slide")
+        $(".about .fifth span").removeClass("slide")
+    })
+
+
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 1000
+    });
+
 }); 
