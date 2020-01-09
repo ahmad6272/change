@@ -150,25 +150,119 @@ main .cell .card {
   margin-bottom: 110px;
 }
 
-main .cell .card .card-body h6 {
-  font-family: Montserrat;
+main .cell .card .sweet {
+  position: relative;
 }
 
-main .cell .card .card-body .cash {
+main .cell .card .sweet .sold span {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: auto;
+  height: 30px;
+  background: #2b2b2b;
+  color: #fff;
+  font-family: "Playfair Display",serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 13px 0 0 13px;
+  padding: 5px 13px;
+  z-index: 100;
+}
+
+main .cell .card .sage {
+  position: relative;
+}
+
+main .cell .card .sage .sale span {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: auto;
+  height: 30px;
+  color: #2b2b2b;
+  background: #fff;
+  font-family: "Playfair Display",serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 13px 0 0 13px;
+  padding: 5px 13px;
+  z-index: 100;
+}
+
+main .cell .card .card-body {
+  margin-top: -10px;
+}
+
+main .cell .card .card-body h6 a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-family: 'Montserrat';
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
+  line-height: 1em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+main .cell .card .card-body span {
+  color: #afafaf;
+  font-size: 12px;
+  font-family: 'Montserrat',sans-serif;
+}
+
+main .cell .card .card-body .add_to_card a {
+  color: #afafaf;
+  font-size: 12px;
+  font-family: 'Montserrat',sans-serif;
+}
+
+main .cell .card .card-body .show {
+  display: none;
 }
 
 main .sector {
   background-color: #f5ebeb;
 }
 
-main .sector #video {
-  display: block;
+main .sector #video .video a {
+  position: relative;
 }
 
-main .sector #video .video {
-  display: block;
+main .sector #video .video a :hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .sector #video .video a .play {
+  margin-top: -233px;
+  margin-left: 40%;
+  width: 103px;
+  height: 103px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+
+main .sector #video .video a .play span .block {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+
+main .sector #video .video a .play span .block::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  border: 13px solid transparent;
+  border-left: 16px solid #f34f3f;
 }
 
 main .sector #video .text .title h2 {
@@ -232,7 +326,7 @@ main #info .backg {
 
 main #info h3 {
   padding-left: 38%;
-  padding-top: 50px;
+  top: 35%;
   position: absolute;
   font-size: 30px;
   text-align: center;
@@ -240,20 +334,17 @@ main #info h3 {
 
 main #info .search {
   position: absolute;
-  padding-left: 38%;
-  padding-top: 80px;
+  height: 60px;
+  top: 45%;
 }
 
 main #info .search input {
-  margin-top: 5px;
-  height: 60px;
+  height: 100%;
 }
 
 main #info .search button {
-  margin-top: 5px;
   width: 170px;
-  height: 60px;
-  margin-left: -6px;
+  height: 100%;
   background-color: #f34f3f;
   color: #fff;
   font-size: 12px;
@@ -325,6 +416,50 @@ main #workers .about span {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+main #instagram .pictures {
+  position: relative;
+}
+
+main #instagram .pictures a {
+  position: relative;
+}
+
+main #instagram .pictures a img {
+  width: 168px;
+  height: 168px;
+}
+
+main #instagram .pictures a :hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 1;
+}
+
+main #instagram .pictures a i {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  font-size: 28px;
+  color: #fff;
+}
+
+main #instagram .pictures .hashdag span {
+  position: absolute;
+  top: calc(50% - 22.5px);
+  left: 45%;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #2d2b2b;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: 11px 22px;
 }
 
 footer {
@@ -952,5 +1087,68 @@ main #tape .tapes .about span {
   font-size: 13px;
   font-weight: 400;
   color: #afafaf;
+}
+
+main .first_bar {
+  width: 100%;
+}
+
+main .first_bar h5 {
+  font-size: 22px;
+  line-height: 1.363em;
+  color: #2b2b2b;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+}
+
+main .first_bar span {
+  font-family: 'Lora',serif;
+  color: #2b2b2b;
+  font-size: 18px;
+}
+
+main .first_bar .line {
+  height: 3px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #f34f3f;
+}
+
+main .container .shop_list {
+  position: relative;
+}
+
+main .container .shop_list span {
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 126px;
+  display: inline-block;
+  font-family: 'Lora',serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #6d6a6a;
+}
+
+main #description .title h2 {
+  font-size: 38px;
+  line-height: 1.447em;
+  color: #2b2b2b;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+}
+
+main #description .title span {
+  position: relative;
+  display: block;
+  margin: 4px 0 0;
+  line-height: 1;
+  color: #afafaf;
+}
+
+main #description .about p {
+  font-size: 15px;
+  position: relative;
+  margin: 23px 0 32px;
+  font-family: 'Lora',serif;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,85 @@
 $(document).ready(function () {
 
+    // cell
+    $(".card_one a img ").mouseover(function () {
+        $(".one .cash .add_to_card ").removeClass("show")
+        $(".one .cash span").addClass("show")
+    })
+    $(".card_one a img").mouseout(function () {
+        $(".one .cash .add_to_card ").addClass("show")
+        $(".one .cash span").removeClass("show")
+    })
+
+    $(".card_two a img ").mouseover(function () {
+        $(".two .cash .add_to_card ").removeClass("show")
+        $(".two .cash span").addClass("show")
+    })
+
+    $(".card_two a img").mouseout(function () {
+        $(".two .cash .add_to_card ").addClass("show")
+        $(".two .cash span").removeClass("show")
+    })
+
+    $(".card_three a img ").mouseover(function () {
+        $(".three .cash .add_to_card ").removeClass("show")
+        $(".three .cash span").addClass("show")
+    })
+
+    $(".card_three a img").mouseout(function () {
+        $(".three .cash .add_to_card ").addClass("show")
+        $(".three .cash span").removeClass("show")
+    })
+
+    $(".card_four a img ").mouseover(function () {
+        $(".four .cash .add_to_card ").removeClass("show")
+        $(".four .cash span").addClass("show")
+    })
+
+    $(".card_four a img").mouseout(function () {
+        $(".four .cash .add_to_card ").addClass("show")
+        $(".four .cash span").removeClass("show")
+    })
+
+    $(".card_five a img ").mouseover(function () {
+        $(".five .cash .add_to_card ").removeClass("show")
+        $(".five .cash span").addClass("show")
+    })
+
+    $(".card_five a img").mouseout(function () {
+        $(".five .cash .add_to_card ").addClass("show")
+        $(".five .cash span").removeClass("show")
+    })
+
+    $(".card_six a img ").mouseover(function () {
+        $(".six .cash .add_to_card ").removeClass("show")
+        $(".six .cash span").addClass("show")
+    })
+
+    $(".card_six a img").mouseout(function () {
+        $(".six .cash .add_to_card ").addClass("show")
+        $(".six .cash span").removeClass("show")
+    })
+
+    $(".card_seven a img ").mouseover(function () {
+        $(".seven .cash .add_to_card ").removeClass("show")
+        $(".seven .cash span").addClass("show")
+    })
+
+    $(".card_seven a img").mouseout(function () {
+        $(".seven .cash .add_to_card ").addClass("show")
+        $(".seven .cash span").removeClass("show")
+    })
+
+    $(".card_eight a img ").mouseover(function () {
+        $(".eight .cash .add_to_card ").removeClass("show")
+        $(".eight .cash span").addClass("show")
+    })
+
+    $(".card_eight a img").mouseout(function () {
+        $(".eight .cash .add_to_card ").addClass("show")
+        $(".eight .cash span").removeClass("show")
+    })
+
     // filter in shelf
     $(".filter_menu").hide();
     $(".filter").click(function () {
@@ -47,68 +127,68 @@ $(document).ready(function () {
     $(".card-header").click(function () {
         $(".fourth div").removeClass("color")
         $(this).addClass("color");
-    })  
+    })
 
 
 
     // tab
-    $("#tab_item a").click(function(){
-		$(".tab div").hide(); 
-		$(".tab div").filter(this.hash).show(); 
-		$("#tab_item a").removeClass("show");
-		$(this).addClass("show");
-	})
-
-    $("#tab_item2 a").click(function(){
-		$(".tab2 div").hide(); 
-		$(".tab2 div").filter(this.hash).show(); 
-		$("#tab_item2 a").removeClass("show");
-		$(this).addClass("show");
-	})
-
-    $("#tab_item3 a").click(function(){
-		$(".tab3 div").hide(); 
-		$(".tab3 div").filter(this.hash).show(); 
-		$("#tab_item3 a").removeClass("show");
-		$(this).addClass("show");
+    $("#tab_item a").click(function () {
+        $(".tab div").hide();
+        $(".tab div").filter(this.hash).show();
+        $("#tab_item a").removeClass("show");
+        $(this).addClass("show");
     })
-    
-    $("#tab_item4 a").click(function(){
-		$(".tab4 div").hide(); 
-		$(".tab4 div").filter(this.hash).show(); 
-		$("#tab_item4 a").removeClass("show");
-		$(this).addClass("show");
+
+    $("#tab_item2 a").click(function () {
+        $(".tab2 div").hide();
+        $(".tab2 div").filter(this.hash).show();
+        $("#tab_item2 a").removeClass("show");
+        $(this).addClass("show");
     })
-    
+
+    $("#tab_item3 a").click(function () {
+        $(".tab3 div").hide();
+        $(".tab3 div").filter(this.hash).show();
+        $("#tab_item3 a").removeClass("show");
+        $(this).addClass("show");
+    })
+
+    $("#tab_item4 a").click(function () {
+        $(".tab4 div").hide();
+        $(".tab4 div").filter(this.hash).show();
+        $("#tab_item4 a").removeClass("show");
+        $(this).addClass("show");
+    })
+
     // shop_list
     $(".first_image").mouseover(function () {
         $(".first").removeClass("show")
-    })  
+    })
     $(".first_image").mouseout(function () {
         $(".first").addClass("show")
-    })  
+    })
 
     $(".second_image").mouseover(function () {
         $(".second").removeClass("show")
-    })  
+    })
     $(".second_image").mouseout(function () {
         $(".second").addClass("show")
-    })  
+    })
 
     $(".third_image").mouseover(function () {
         $(".third").removeClass("show")
-    })  
+    })
     $(".third_image").mouseout(function () {
         $(".third").addClass("show")
-    })  
+    })
 
     $(".fourth_image").mouseover(function () {
         $(".fourth").removeClass("show")
-    })  
+    })
     $(".fourth_image").mouseout(function () {
         $(".fourth").addClass("show")
     })
-    
+
 
     // shop_list_slider
     $(".first_picture ").mouseover(function () {
@@ -170,5 +250,10 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 1000
     });
+
+    // progress_bar
+
+    
+
 
 }); 

@@ -171,15 +171,80 @@ main {
   .cell {
     .card {
       margin-bottom: 110px;
+      .sweet{
+        position: relative;
+        .sold{
+          span{
+            position: absolute;
+            display: block;
+            top: 0;
+            width: auto;
+            height: 30px;
+            background: #2b2b2b;
+            color: #fff;
+            font-family: "Playfair Display",serif;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 13px 0 0 13px;
+            padding: 5px 13px;
+            z-index: 100;
+          }          
+        }
+      }
+
+      .sage{
+        position: relative;
+        .sale{
+          span{
+            position: absolute;
+            display: block;
+            top: 0;
+            width: auto;
+            height: 30px;
+            color: #2b2b2b;
+            background: #fff;
+            font-family: "Playfair Display",serif;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 13px 0 0 13px;
+            padding: 5px 13px;
+            z-index: 100;
+          }          
+        }
+      }
 
       .card-body {
+        margin-top: -10px;
         h6 {
-          font-family: Montserrat
+          a{
+            text-decoration: none;
+            color: #1b1b1b;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            line-height: 1em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
         }
-
-        .cash {
+        span {
+          color: #afafaf;
           font-size: 12px;
-          font-family: 'Montserrat', sans-serif
+          font-family: 'Montserrat',sans-serif;
+        }
+        .add_to_card{
+          a{
+            color: #afafaf;
+            font-size: 12px;
+            font-family: 'Montserrat',sans-serif;
+          }
+        }
+        .show{
+          display: none;
         }
       }
     }
@@ -189,10 +254,39 @@ main {
     background-color: #f5ebeb;
 
     #video {
-      display: block;
-
-      .video {
-        display: block;
+      .video{
+        a{
+          position: relative;
+          :hover{
+            transform: scale(1.01,1.01);
+            transition: .5s;
+          }
+          .play{
+            margin-top: -233px;
+            margin-left: 40%;
+            width: 103px;
+            height: 103px;
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            span{
+              .block{
+                position: absolute;
+                top: 45%;
+                left: 25%;
+              }
+               .block::after {
+                content: ''; 
+                position: absolute;
+                left: 20px; 
+                bottom: -20px;
+                border: 13px solid transparent;
+                border-left: 16px solid #f34f3f; 
+               
+               }
+            }
+          }
+        }
       }
 
       .text {
@@ -258,21 +352,17 @@ main {
   #info {
     margin-top: 4em;
     width: 100%;
-    //height: 400px;
     height: 100vh;
     position: relative;
 
     .backg {
-
       background: url(../image/background/h3-background-img.jpg) fixed;
       background-size: cover;
-
     }
 
     h3 {
-
       padding-left: 38%;
-      padding-top: 50px;
+      top: 35%;
       position: absolute;
       font-size: 30px;
       text-align: center;
@@ -280,19 +370,16 @@ main {
 
     .search {
       position: absolute;
-      padding-left: 38%;
-      padding-top: 80px;
+      height: 60px;
+      top: 45%;
 
       input {
-        margin-top: 5px;
-        height: 60px;
+        height: 100%;
       }
 
       button {
-        margin-top: 5px;
         width: 170px;
-        height: 60px;
-        margin-left: -6px;
+        height: 100%;
         background-color: #f34f3f;
         color: #fff;
         font-size: 12px;
@@ -371,6 +458,49 @@ main {
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
+      }
+    }
+  }
+
+  //instagram pictures
+  #instagram{
+    .pictures{
+      position: relative;
+      a{
+        
+        position: relative;
+        img{
+          width: 168px;
+          height: 168px;
+        }
+        :hover{
+          transform: scale(1.01,1.01);
+          transition: .5s;
+          opacity: 1;
+        }
+          i{
+            opacity: 0;
+            position: absolute;
+            top: 40%;
+            left: 42%;
+            font-size: 28px;
+            color: #fff;
+          }
+      }
+      .hashdag{
+        span{
+          position: absolute;
+          top: calc(50% - 22.5px);
+          left: 45%;
+          z-index: 2;
+          font-size: 14px;
+          font-weight: 500;
+          background-color: rgba(255,255,255,.9);
+          color: #2d2b2b;
+          text-transform: uppercase;
+          letter-spacing: .2em;
+          padding: 11px 22px;
+        }
       }
     }
   }
@@ -1013,6 +1143,76 @@ main{
           font-weight: 400;
           color: #afafaf;
         }
+      }
+    }
+  }
+}
+
+// progress_bar
+main{
+  .first_bar{
+    width: 100%;
+    h5{
+      font-size: 22px;
+      line-height: 1.363em;
+      color: #2b2b2b;
+      font-family: "Playfair Display",serif;
+      font-weight: 400;
+    }
+    span{
+      font-family: 'Lora',serif;
+      color: #2b2b2b;
+      font-size: 18px;
+    }
+    .line{
+      height: 3px;
+      max-width: 100%;
+      overflow: hidden;
+      background-color: #f34f3f;
+    }
+  }
+}
+
+// product_list
+main{
+  .container{
+    .shop_list{
+      position: relative;
+      span{
+        position: absolute;
+        margin-top: -77px;
+        margin-left: 126px;
+        display: inline-block;
+        font-family: 'Lora',serif;
+        font-size: 17px;
+        font-style: italic;
+        color: #6d6a6a;
+      }
+    }
+  }
+  #description{
+    .title{
+      h2{
+        font-size: 38px;
+        line-height: 1.447em;
+        color: #2b2b2b;
+        font-family: "Playfair Display",serif;
+        font-weight: 400; 
+      }
+      span{
+        position: relative;
+        display: block;
+        margin: 4px 0 0;
+        line-height: 1;
+        color: #afafaf;
+      }
+    }
+    .about{
+      p{
+        font-size: 15px;
+        position: relative;
+        margin: 23px 0 32px;
+        font-family: 'Lora',serif;
       }
     }
   }
